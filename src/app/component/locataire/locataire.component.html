@@ -1,1 +1,23 @@
-<h1>Locataire in {{"Localisation"}}</h1>
+<!-- locataire.component.html -->
+
+<section>
+
+    <h1>Locataire in {{"Localisation"}}</h1>
+    <p>Appartements mis en ligne récemment : {{locationNumber}}</p>
+
+    <button (click)="createNewAppartementRedirection()">Créer une nouvelle annonce</button>
+
+    <div class="locataire-wrapper">
+        <div class="wrapper--new-appartements">
+            <div *ngFor="let appartements of getAppartementsArray" class="new-items">
+                <p>Titre : {{appartements.title}}</p>
+                <p>Description : {{appartements.description}}</p>
+                <p>Prix : {{appartements.price}}</p>
+            </div>
+        </div>
+        <app-map></app-map>
+    </div>
+
+    <p *ngIf="getAppartementsArray.length === 0">Pas d'appartement</p>
+
+</section>

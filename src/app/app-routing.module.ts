@@ -6,6 +6,8 @@ import { LocataireComponent } from './component/locataire/locataire.component';
 import { RoommateComponent } from './component/roommate/roommate.component';
 import { TenantlessapprtmComponent } from './component/tenantlessapprtm/tenantlessapprtm.component';
 import { LoginpageComponent } from './component/loginpage/loginpage.component';
+import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
+import { MapComponent } from './component/map/map.component';
 
 const routes: Routes = [
   { path: "", component: LoginpageComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: "locataire", component: LocataireComponent },
   { path: "roommate", component: RoommateComponent },
   { path: "nolocataire", component: TenantlessapprtmComponent },
+  { path: "createnewappartement", component: CreateNewappartementComponent },
+  { path: "map", component: MapComponent },
 ];
 
 @NgModule({

@@ -23,10 +23,9 @@ export class MainPageComponent {
   navigateToLocatairePage() {
     this.selectedCategoryTitle = 'Locataire'
     this.selectedCategoryParagraphe =  'Trouvez le meilleur des locataires'
-    // this.route.navigate(['locataire'])
+    this.route.navigate(['locataire'])
   }
   navigateToRoommatePage() {
-    
     this.selectedCategoryTitle = 'Colocataire'
     this.selectedCategoryParagraphe =  'Trouvez le colocataire parfait'
     // this.route.navigate(['roommate'])

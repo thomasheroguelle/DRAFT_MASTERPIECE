@@ -12,24 +12,34 @@ import { RoommateComponent } from './component/roommate/roommate.component';
 import { LocataireComponent } from './component/locataire/locataire.component';
 import { LoginpageComponent } from './component/loginpage/loginpage.component';
 import { MatIconModule } from '@angular/material/icon';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {  MapComponent } from './component/map/map.component';
+import { LeafletEvent } from 'leaflet';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     MainPageComponent,
     BedroomComponent,
     TenantlessapprtmComponent,
     RoommateComponent,
     LocataireComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    CreateNewappartementComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+
 
   ],
   providers: [],
