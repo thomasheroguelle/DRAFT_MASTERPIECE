@@ -1,33 +1,36 @@
 .wrapper--new-appartements {
-    border: 5px solid orange;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-y: auto;
-    max-height: 100vh;
-    gap: 20px;
+  border: 5px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 100vh;
+  gap: 20px;
 }
 
 .wrapper--new-appartements::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
 .new-items {
-    border: 2px solid green;
-    width: 380px;
-    height: 520px;
-    border-radius: 1em;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  border: 2px solid green;
+  width: 380px;
+  height: 520px;
+  border-radius: 1em;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-items:hover {
+  cursor: pointer;
+  border: 1px solid #000;
 }
 
 .locataire-wrapper {
-    display: flex;
-    border: 2px solid red;
-    justify-content: center;
-
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
 }

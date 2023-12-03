@@ -1,45 +1,44 @@
 <div class="mainPage-wrapper">
-    <div class="text">
+  <div class="text">
+    @if (!selectedCategoryTitle || !selectedCategoryParagraphe) {
+      <h1>De quoi avez-vous besoin aujourd'hui ?</h1>
+    }
 
-        @if (!selectedCategoryTitle || !selectedCategoryParagraphe ) {
-        <h1>De quoi avez-vous besoin aujourd'hui ? </h1>
-        }
+    <h1>{{ selectedCategoryTitle }}</h1>
+    <p>{{ selectedCategoryParagraphe }}</p>
 
-        <h1>{{selectedCategoryTitle}}</h1>
-        <p>{{selectedCategoryParagraphe}}</p>
+    <form class="inline">
+      <div class="input-icons">
+        <input class="input-field" type="text" placeholder="Paris" />
+        <i class="fa-solid fa-arrow-right" (click)="openDialog()"></i>
+      </div>
+    </form>
 
-        <form class="inline">
-            <div class="input-icons">
-                <input class="input-field" type="text" placeholder="Paris">
-                <i class="fa-solid fa-arrow-right" (click)="openDialog()"></i>
-            </div>
-        </form>
-
-        @if (isClicked) {
-        <div class="categorys-wrapper">
-            <div class="chambre" (click)="navigateToBedroomPage()">
-                <i class="fa-solid fa-bed"></i>
-                <h2>Chambre</h2>
-            </div>
-            <div class="appartement" (click)="navigateToLocatairePage()">
-                <i class="fa-solid fa-house"></i>
-                <h2>Appartement </h2>
-            </div>
-            <div class="colocataire" (click)="navigateToRoommatePage()">
-                <i class="fa-solid fa-person"></i>
-                <h2>Colocataire </h2>
-            </div>
-            <div class="locataire" (click)="navigateToNoLocatairePage()">
-                <i class="fa-solid fa-face-smile-wink"></i>
-                <h2>Locataire</h2>
-            </div>
+    @if (isClicked) {
+      <div class="categorys-wrapper">
+        <div class="chambre" (click)="navigateToBedroomPage()">
+          <i class="fa-solid fa-bed"></i>
+          <h2>Chambre</h2>
         </div>
-        }
-    </div>
+        <div class="appartement" (click)="navigateToLocatairePage()">
+          <i class="fa-solid fa-house"></i>
+          <h2>Appartement</h2>
+        </div>
+        <div class="colocataire" (click)="navigateToRoommatePage()">
+          <i class="fa-solid fa-person"></i>
+          <h2>Colocataire</h2>
+        </div>
+        <div class="locataire" (click)="navigateToNoLocatairePage()">
+          <i class="fa-solid fa-face-smile-wink"></i>
+          <h2>Locataire</h2>
+        </div>
+      </div>
+    }
+  </div>
 
-    <div class="mainPage-image">
-        <img src="assets\imgs\mainpage\mainpage.jpg">
-    </div>
+  <div class="mainPage-image">
+    <img src="assets\imgs\mainpage\mainpage.jpg" />
+  </div>
 </div>
 
 <!-- RECUPERATION DE DONNEE : 

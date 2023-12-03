@@ -8,10 +8,9 @@ describe('TenantlessapprtmComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [TenantlessapprtmComponent]
-    })
-    .compileComponents();
-    
+      declarations: [TenantlessapprtmComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(TenantlessapprtmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

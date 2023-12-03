@@ -15,12 +15,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import {  MapComponent } from './component/map/map.component';
+import { MapComponent } from './component/map/map.component';
 import { LeafletEvent } from 'leaflet';
+
+import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     MainPageComponent,
     BedroomComponent,
     TenantlessapprtmComponent,
@@ -29,6 +31,7 @@ import { LeafletEvent } from 'leaflet';
     LoginpageComponent,
     CreateNewappartementComponent,
     MapComponent,
+    LogementDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,10 +42,8 @@ import { LeafletEvent } from 'leaflet';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-
-
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
