@@ -3,7 +3,6 @@ import { AfterViewInit, Injectable } from '@angular/core';
 import * as L from 'leaflet';
 import Geocoder, { geocoders } from 'leaflet-control-geocoder';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +10,7 @@ export class GetUserLocalisationService implements AfterViewInit {
   private map: L.Map | undefined;
   private tiles: L.TileLayer | undefined;
   marker = new L.Marker([48.866667, 2.333333]);
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getUserIp() {
     if (!navigator.geolocation) {
@@ -29,7 +28,6 @@ export class GetUserLocalisationService implements AfterViewInit {
         this.map = L.map('map').setView(latLong, 13);
         this.tiles?.addTo(this.map);
         this.marker.addTo(this.map);
-
       }
     });
   }
@@ -70,24 +68,21 @@ export class GetUserLocalisationService implements AfterViewInit {
     });
     this.marker.addTo(this.map);
 
-    // pop up 
+    // pop up
     this.marker.bindPopup('<b>Hello world!</b><br>I am a popup.').openPopup();
 
-    const customIcon = L.icon({
-      iconUrl: '/assets/imgs/marker.png', // Chemin vers votre icône personnalisée
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-    });
-
+    // const customIcon = L.icon({
+    //   iconUrl: '/assets/imgs/marker.png',
+    //   iconSize: [25, 41],
+    //   iconAnchor: [12, 41],
+    //   popupAnchor: [1, -34],
+    // });
 
     // input search control
     const GeocoderControl = new Geocoder();
     GeocoderControl.addTo(this.map);
     GeocoderControl.on('markgeocode', function (e) {
-      console.log(e)
-    })
+      console.log(e);
+    });
   }
-
-
 }

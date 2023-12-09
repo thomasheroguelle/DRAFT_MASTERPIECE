@@ -17,8 +17,12 @@ import { CreateNewappartementComponent } from './component/create-newappartement
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MapComponent } from './component/map/map.component';
 import { LeafletEvent } from 'leaflet';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
+import { SidenavComponent } from './component/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { LogementDetailsComponent } from './component/logement-details/logement-
     CreateNewappartementComponent,
     MapComponent,
     LogementDetailsComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +47,9 @@ import { LogementDetailsComponent } from './component/logement-details/logement-
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

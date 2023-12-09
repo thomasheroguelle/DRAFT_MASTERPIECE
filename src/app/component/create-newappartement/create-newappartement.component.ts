@@ -3,7 +3,10 @@ import { IAppartement } from '../../AppartementModel';
 import { MasterpieceapiService } from '../../service/masterpieceapi.service';
 import { Router } from '@angular/router';
 import { GetUserLocalisationService } from '../../service/get-user-localisation.service';
-
+import { HttpClient } from '@angular/common/http';
+import { AfterViewInit, Injectable } from '@angular/core';
+import * as L from 'leaflet';
+import Geocoder from 'leaflet-control-geocoder';
 @Component({
   selector: 'app-create-newappartement',
   templateUrl: './create-newappartement.component.html',
@@ -14,10 +17,12 @@ export class CreateNewappartementComponent {
   title: string = '';
   description: string = '';
   price: number = 0;
+  marker = new L.Marker([48.866667, 2.333333]);
 
   constructor(
     private masterPieceApi: MasterpieceapiService,
     private router: Router,
+    private getUserLocalisation: GetUserLocalisationService,
   ) {}
 
   createNewAppartement(): void {
@@ -26,6 +31,10 @@ export class CreateNewappartementComponent {
       title: this.title,
       description: this.description,
       price: this.price,
+      location: {
+        latitude: this.marker ? this.marker.getLatLng().lat : 0,
+        longitude: this.marker ? this.marker.getLatLng().lng : 0,
+      },
     };
 
     this.masterPieceApi.createNewAppartement(newAppartement).subscribe(
