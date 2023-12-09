@@ -1,3 +1,12 @@
+li {
+  border: 1px solid black;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #f2f2f2;}
+
 mat-toolbar {
   border: 2px solid red;
   display: flex;
@@ -9,14 +18,15 @@ mat-toolbar {
   display: inline-flex;
   align-items: center;
   border: 1px solid grey;
-
   border-radius: 0.5em;
-  padding: 5px;
   border: 1px solid grey;
   cursor: pointer;
   background-color: white;
+  font-size: 12px;
+
   /* OK  */
 }
+
 
 .user-account:hover {
   background-color: #f6f6f6;
@@ -69,4 +79,3 @@ mat-divider {
   margin-bottom: 16px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { MasterpieceapiService } from '../../service/masterpieceapi.service';
+import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
 import { Observable, switchMap } from 'rxjs';
-import { IAppartement } from '../../AppartementModel';
+import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import L from 'leaflet';

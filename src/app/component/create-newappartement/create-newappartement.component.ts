@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { IAppartement } from '../../AppartementModel';
-import { MasterpieceapiService } from '../../service/masterpieceapi.service';
+import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
+import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
 import { Router } from '@angular/router';
-import { GetUserLocalisationService } from '../../service/get-user-localisation.service';
+import { GetUserLocalisationService } from '../../service/UserLocalisation/get-user-localisation.service';
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Injectable } from '@angular/core';
 import * as L from 'leaflet';
@@ -23,7 +23,7 @@ export class CreateNewappartementComponent {
     private masterPieceApi: MasterpieceapiService,
     private router: Router,
     private getUserLocalisation: GetUserLocalisationService,
-  ) {}
+  ) { }
 
   createNewAppartement(): void {
     const newAppartement: IAppartement = {
@@ -31,10 +31,10 @@ export class CreateNewappartementComponent {
       title: this.title,
       description: this.description,
       price: this.price,
-      location: {
-        latitude: this.marker ? this.marker.getLatLng().lat : 0,
-        longitude: this.marker ? this.marker.getLatLng().lng : 0,
-      },
+      // location: {
+      //   latitude: this.marker ? this.marker.getLatLng().lat : 0,
+      //   longitude: this.marker ? this.marker.getLatLng().lng : 0,
+      // },
     };
 
     this.masterPieceApi.createNewAppartement(newAppartement).subscribe(

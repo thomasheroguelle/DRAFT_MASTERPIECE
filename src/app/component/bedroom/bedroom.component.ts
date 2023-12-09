@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { MasterpieceapiService } from '../../service/masterpieceapi.service';
+import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
 import { Observable } from 'rxjs';
-import { IAppartement } from '../../AppartementModel';
+import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 
 @Component({
   selector: 'app-bedroom',

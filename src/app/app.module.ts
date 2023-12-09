@@ -23,6 +23,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
+import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SidenavComponent } from './component/sidenav/sidenav.component';
     MapComponent,
     LogementDetailsComponent,
     SidenavComponent,
+    FavoritebookmarkComponent,
   ],
   imports: [
     BrowserModule,

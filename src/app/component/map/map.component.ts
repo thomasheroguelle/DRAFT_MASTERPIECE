@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
-import { GetUserLocalisationService } from '../../service/get-user-localisation.service';
+import { GetUserLocalisationService } from '../../service/UserLocalisation/get-user-localisation.service';
 
 @Component({
   selector: 'app-map',
