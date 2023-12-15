@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FavoriteBookmarkService } from '../../service/FavoriteBookmark/favorite-bookmark.service';
 import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
 
 @Component({
@@ -9,17 +8,5 @@ import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
 })
 export class FavoritebookmarkComponent {
 
-  favorite: BookMark = {
-    id: 1,
-    title: '',
-    url: ""
-  }
 
-  constructor(private favoriteBookMark: FavoriteBookmarkService) { }
-  getFavorites() {
-    this.favoriteBookMark.getFavorites()
-  }
-  newFavorite() {
-    this.favoriteBookMark.newFavorite(this.favorite)
-  }
 }

@@ -8,10 +8,9 @@ describe('FavoritebookmarkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FavoritebookmarkComponent]
-    })
-    .compileComponents();
-    
+      declarations: [FavoritebookmarkComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(FavoritebookmarkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

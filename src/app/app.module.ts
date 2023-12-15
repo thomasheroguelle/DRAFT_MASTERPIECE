@@ -10,7 +10,6 @@ import { BedroomComponent } from './component/bedroom/bedroom.component';
 import { TenantlessapprtmComponent } from './component/tenantlessapprtm/tenantlessapprtm.component';
 import { RoommateComponent } from './component/roommate/roommate.component';
 import { LocataireComponent } from './component/locataire/locataire.component';
-import { LoginpageComponent } from './component/loginpage/loginpage.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
@@ -20,10 +19,13 @@ import { LeafletEvent } from 'leaflet';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { HomepageComponent } from './component/homepage/homepage.component';
 import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
+import { RegisterComponent } from './component/register/register.component';
+import { LoginComponent } from './component/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -33,12 +35,14 @@ import { FavoritebookmarkComponent } from './component/favoritebookmark/favorite
     TenantlessapprtmComponent,
     RoommateComponent,
     LocataireComponent,
-    LoginpageComponent,
     CreateNewappartementComponent,
     MapComponent,
     LogementDetailsComponent,
     SidenavComponent,
     FavoritebookmarkComponent,
+    HomepageComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,7 @@ import { FavoritebookmarkComponent } from './component/favoritebookmark/favorite
     MatSidenavModule,
     MatDividerModule,
     MatToolbarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

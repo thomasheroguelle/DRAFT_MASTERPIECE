@@ -5,6 +5,7 @@ import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import L from 'leaflet';
+import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
 
 @Component({
   selector: 'app-locataire',
@@ -43,17 +44,5 @@ export class LocataireComponent {
       },
     );
     return this.masterPieceApi.getAppartements();
-  }
-
-  getDetails() {
-    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
-    this.getLocationDetail = this.getAppartementsArray.find(
-      (location) => location.id === id,
-    );
-    if (this.getLocationDetail) {
-      console.log(this.getLocationDetail);
-    } else {
-      console.error("pas d'id trouvé", id);
-    }
-  }
+  } 
 }

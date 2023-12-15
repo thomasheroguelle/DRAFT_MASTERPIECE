@@ -1,6 +1,6 @@
 .favorite-icon:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 .favorite-icon::after {
-    background-color: red;
+  background-color: red;
 }

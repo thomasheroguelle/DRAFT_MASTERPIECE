@@ -5,13 +5,13 @@ li {
 }
 
 li:hover {
-  background-color: #f2f2f2;}
+  background-color: #f2f2f2;
+}
 
 mat-toolbar {
   border: 2px solid red;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .user-account {
@@ -26,7 +26,6 @@ mat-toolbar {
 
   /* OK  */
 }
-
 
 .user-account:hover {
   background-color: #f6f6f6;
@@ -48,7 +47,6 @@ mat-sidenav {
 
 mat-sidenav-container {
   border: 8px solid green;
-
 }
 
 .close-btn {

@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Injectable } from '@angular/core';
 import * as L from 'leaflet';
 import Geocoder from 'leaflet-control-geocoder';
+import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
 @Component({
   selector: 'app-create-newappartement',
   templateUrl: './create-newappartement.component.html',
@@ -18,12 +19,13 @@ export class CreateNewappartementComponent {
   description: string = '';
   price: number = 0;
   marker = new L.Marker([48.866667, 2.333333]);
+  favorites!: BookMark;
 
   constructor(
     private masterPieceApi: MasterpieceapiService,
     private router: Router,
     private getUserLocalisation: GetUserLocalisationService,
-  ) { }
+  ) {}
 
   createNewAppartement(): void {
     const newAppartement: IAppartement = {
@@ -35,6 +37,7 @@ export class CreateNewappartementComponent {
       //   latitude: this.marker ? this.marker.getLatLng().lat : 0,
       //   longitude: this.marker ? this.marker.getLatLng().lng : 0,
       // },
+      favorites: this.favorites,
     };
 
     this.masterPieceApi.createNewAppartement(newAppartement).subscribe(
