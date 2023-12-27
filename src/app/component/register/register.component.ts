@@ -7,24 +7,21 @@ import { Component } from '@angular/core';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-  employeename: string = "";
+  userName: string = "";
   email: string = "";
   password: string = "";
 
-
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) { }
   save() {
 
     let bodyData = {
-      "employeename": this.employeename,
+      "userName": this.userName,
       "email": this.email,
       "password": this.password
     };
-    this.http.post("http://localhost:8085/api/v1/employee/save", bodyData, { responseType: 'text' }).subscribe((resultData: any) => {
+    this.http.post("http://localhost:8090/api/v1/user/save", bodyData, { responseType: 'text' }).subscribe((resultData: any) => {
       console.log(resultData);
-      alert("Employee Registered Successfully");
+      alert("User Registered Successfully");
 
     });
   }

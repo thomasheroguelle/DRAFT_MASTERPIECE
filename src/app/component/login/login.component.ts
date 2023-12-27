@@ -24,14 +24,12 @@ export class LoginComponent {
       password: this.password,
     };
 
-    this.http.post("http://localhost:8090/api/v1/employee/login", bodyData).subscribe((resultData: any) => {
+    this.http.post("http://localhost:8090/api/v1/user/login", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
 
       if (resultData.message == "Email not exits") {
 
         alert("Email not exits");
-
-
       }
       else if (resultData.message == "Login Success") {
         this.router.navigateByUrl('/home');
