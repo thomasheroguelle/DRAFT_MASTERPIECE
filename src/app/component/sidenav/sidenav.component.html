@@ -1,61 +1,22 @@
-<app-favoritebookmark></app-favoritebookmark>
+<div class="menu">
 
-<mat-toolbar>
-  <div class="user-account" (click)="sidenav.toggle()">
-    <p>User account</p>
-    <i class="fa-regular fa-user"> </i>
+  <div class="items-container">
+    <mat-icon title="Home"> home</mat-icon>
   </div>
-</mat-toolbar>
 
-<mat-sidenav-container>
-  <mat-sidenav
-    style="border: 2px solid rgb(234, 0, 255)"
-    #sidenav="matSidenav"
-    class="mat-elevation-z8"
-  >
-    <mat-icon
-      class="close-btn"
-      (click)="sidenav.toggle()"
-      *ngIf="sidenav.opened"
-    >
-      close
-    </mat-icon>
+  <div class="items-container">
+    <mat-icon title="Messages"> message</mat-icon>
+  </div>
 
-    <h4 class="name">John Smith</h4>
-    <p class="designation">Software Engineer</p>
+  <div class="items-container">
+    <mat-icon title="Discover"> search</mat-icon>
+  </div>
 
-    <mat-divider></mat-divider>
+  <div class="items-container">
+    <mat-icon title="Favorites"> favorite</mat-icon>
+  </div>
 
-    <ul (click)="sidenav.close()">
-      <li>
-        <span mat-button class="menu-button" routerLink="locataire"
-          >Rechercher</span
-        >
-      </li>
-      <li>
-        <mat-icon class="favorite-icon">favorite_border</mat-icon>
-        <span mat-icon class="favorite-icon" routerLink="favorites"
-          >Favoris</span
-        >
-      </li>
-      <li>
-        <span mat-button class="menu-button" routerLink="locataire"
-          >Rechercher</span
-        >
-      </li>
-      <li>
-        <span mat-button class="menu-button" routerLink="locataire"
-          >Rechercher</span
-        >
-      </li>
-    </ul>
-  </mat-sidenav>
-
-  <mat-sidenav-content style="border: 12px solid black">
-    <div class="content mat-elevation-z8">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
-<!-- https://zoaibkhan.com/blog/create-a-responsive-sidebar-menu-with-angular-material/ -->
+  <div class="items-container">
+    <mat-icon title="Settings"> settings</mat-icon>
+  </div>
+</div>
