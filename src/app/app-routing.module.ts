@@ -10,8 +10,8 @@ import { MapComponent } from './component/map/map.component';
 import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
 import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
-import { LoginComponent } from './component/login/login.component';
-import { RegisterComponent } from './component/register/register.component';
+// import { LoginComponent } from './component/login/login.component';
+// import { RegisterComponent } from './component/register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -24,8 +24,8 @@ const routes: Routes = [
   { path: 'map', component: MapComponent },
   { path: 'locataire/:id', component: LogementDetailsComponent },
   { path: 'favorites', component: FavoritebookmarkComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  // { path: 'login', component: LoginComponent },
+  // { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({

@@ -7,13 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class MasterpieceapiService {
   errorMessage?: string;
-  private url = 'http://localhost:8090/appt/api';
+  private url = 'http://localhost:8091/api/v1/appt';
 
   constructor(private httpClient: HttpClient) {}
-
-  // createAppartement(appartment: IAppartement): Observable<IAppartement> {
-  //   return this.httpClient.post<IAppartement>(this.url, appartment);
-  // }
 
   getAppartements(): Observable<IAppartement[]> {
     return this.httpClient.get<IAppartement[]>(this.url);
@@ -37,7 +33,7 @@ export class MasterpieceapiService {
   }
 
   createNewAppartement(newAppartement: IAppartement): Observable<IAppartement> {
-    return this.httpClient.post<IAppartement>(this.url, newAppartement);
+    return this.httpClient.post<IAppartement>(`${this.url}/create`, newAppartement);
   }
   deleteAppartement(appartementId: number): Observable<void> {
     return this.httpClient.delete<void>(`${this.url}/${appartementId}`);

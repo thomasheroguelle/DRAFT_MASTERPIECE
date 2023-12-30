@@ -32,7 +32,7 @@ export class LoginComponent {
         alert("Email not exits");
       }
       else if (resultData.message == "Login Success") {
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/locataire');
       }
       else {
         alert("Incorrect Email and Password not match");
