@@ -3,9 +3,8 @@
 <section>
   <h1>Locataire in {{ "Localisation" }}</h1>
   <p>Appartements mis en ligne récemment : {{ locationNumber }}</p>
-  <p>Leaflet search control.</p>
 
-  <button (click)="createNewAppartementRedirection()">
+  <button routerLink="/createnewappartement">
     Créer une nouvelle annonce
   </button>
 
@@ -17,10 +16,12 @@
   <div class="locataire-wrapper">
     <div class="wrapper--new-appartements">
       <div routerLink="/locataire/{(locataire.id)}" *ngFor="let appartements of getAppartementsArray" class="new-items">
-        <mat-icon class="favorite-icon">favorite_border</mat-icon>
+        <img src="assets/imgs/randomImg.jpg" alt="">
+        <!-- <mat-icon class="favorite-icon">favorite_border</mat-icon> -->
+        <p class="price">{{ appartements.price }} €/mois</p>
+        <p class="description">Description : {{ appartements.description }}</p>
         <p>Titre : {{ appartements.title }}</p>
-        <p>Description : {{ appartements.description }}</p>
-        <p>Prix : {{ appartements.price }}</p>
+        <p>Un titre n'est pas utile, ajouter un attribut adresse à la place</p>
       </div>
     </div>
   </div>

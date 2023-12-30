@@ -18,11 +18,7 @@ export class LocataireComponent {
     private masterPieceApi: MasterpieceapiService,
     private activatedRoute: ActivatedRoute,
     private httpClient: HttpClient,
-  ) {}
-
-  createNewAppartementRedirection() {
-    this.router.navigate(['createnewappartement']);
-  }
+  ) { }
 
   ngOnInit() {
     this.getAppartements();
@@ -44,5 +40,5 @@ export class LocataireComponent {
       },
     );
     return this.masterPieceApi.getAppartements();
-  } 
+  }
 }
