@@ -9,17 +9,20 @@
     Créer une nouvelle annonce
   </button>
 
+  <button routerLink="/map">
+    <mat-icon>map</mat-icon>
+    Map
+  </button>
+
   <div class="locataire-wrapper">
     <div class="wrapper--new-appartements">
-      <div routerLink="/locataire/{(locataire.id)}"
-        *ngFor="let appartements of getAppartementsArray" class="new-items">
+      <div routerLink="/locataire/{(locataire.id)}" *ngFor="let appartements of getAppartementsArray" class="new-items">
         <mat-icon class="favorite-icon">favorite_border</mat-icon>
         <p>Titre : {{ appartements.title }}</p>
         <p>Description : {{ appartements.description }}</p>
         <p>Prix : {{ appartements.price }}</p>
       </div>
     </div>
-    <app-map></app-map>
   </div>
 
   <p *ngIf="getAppartementsArray.length === 0">Pas d'appartement</p>
