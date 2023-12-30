@@ -25,6 +25,7 @@ import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
 import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
+import { HeaderComponent } from './component/header/header.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { LoginComponent } from './component/login/login.component';
     HomepageComponent,
     RegisterComponent,
     LoginComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

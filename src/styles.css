@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-left: 75px;
 }
 
 code {
@@ -16,3 +17,4 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+
