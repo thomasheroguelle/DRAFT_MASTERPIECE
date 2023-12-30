@@ -1,26 +1,43 @@
-<div class="container mt-4" >
-    <div class="card">
-        <h1>S'inscrire</h1>
-<form>
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}"  class="form-control" id="name" class="form-control" placeholder="Enter Name">
-    </div>
+<div class="container">
+  <div class="card">
+    <h1>S'inscrire</h1>
+    <form>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="form-control" id="name"
+          class="form-control" placeholder="Enter Name">
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label>Email</label>
-        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email"  placeholder="Enter Email">
+        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email"
+          placeholder="Enter Email">
       </div>
 
       <div class="form-group">
         <label>Password</label>
-        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="password" class="form-control" placeholder="Enter Password">
+        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control"
+          id="password" class="form-control" placeholder="Enter Password">
       </div>
 
-     <button type="button" class="btn btn-primary" (click)="save()">S'inscrire</button>
-
-
-  </form>
-</div>
-
+      <button type="button" class="btn btn-primary" (click)="save()">S'inscrire</button>
+    </form>
+  </div>
+  <div class="frame">
+    <button class="custom-btn home-login--btn">
+      <mat-icon class="svgIcons"> phone</mat-icon>
+      Login with phone
+    </button>
+  
+    <div class="separator">Or</div>
+    <button class="custom-btn google-button">
+      <embed class="svgIcons" src="assets\icons\google.svg" />
+      Continue with Google
+    </button>
+    <button class="custom-btn facebook-button">
+      <embed class="svgIcons facebook-icon" src="assets\icons\facebook.svg" />
+      Continue with Facebook
+    </button>
+    ajouter mat form 
+  </div>
 </div>

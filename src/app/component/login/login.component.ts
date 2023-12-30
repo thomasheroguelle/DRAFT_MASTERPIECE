@@ -24,7 +24,7 @@ export class LoginComponent {
       password: this.password,
     };
 
-    this.http.post("http://localhost:8090/api/v1/user/login", bodyData).subscribe((resultData: any) => {
+    this.http.post("http://localhost:8091/api/v1/user/login", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
 
       if (resultData.message == "Email not exits") {
