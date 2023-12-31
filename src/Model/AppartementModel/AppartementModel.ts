@@ -1,4 +1,4 @@
-import { BookMark } from "../FavoriteBookMark/FavoriteBookMark";
+import { BookMark } from '../FavoriteBookMark/FavoriteBookMark';
 
 export interface IAppartement {
   id: number;
@@ -9,5 +9,5 @@ export interface IAppartement {
   //   latitude: number;
   //   longitude: number;
   // };
-  favorites?: BookMark
+  favorites?: BookMark;
 }

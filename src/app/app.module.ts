@@ -27,7 +27,6 @@ import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +57,7 @@ import { HeaderComponent } from './component/header/header.component';
     MatSidenavModule,
     MatDividerModule,
     MatToolbarModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

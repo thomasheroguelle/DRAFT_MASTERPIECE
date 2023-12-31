@@ -18,7 +18,7 @@ export class LocataireComponent {
     private masterPieceApi: MasterpieceapiService,
     private activatedRoute: ActivatedRoute,
     private httpClient: HttpClient,
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.getAppartements();

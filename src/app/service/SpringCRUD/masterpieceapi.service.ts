@@ -33,7 +33,10 @@ export class MasterpieceapiService {
   }
 
   createNewAppartement(newAppartement: IAppartement): Observable<IAppartement> {
-    return this.httpClient.post<IAppartement>(`${this.url}/create`, newAppartement);
+    return this.httpClient.post<IAppartement>(
+      `${this.url}/create`,
+      newAppartement,
+    );
   }
   deleteAppartement(appartementId: number): Observable<void> {
     return this.httpClient.delete<void>(`${this.url}/${appartementId}`);

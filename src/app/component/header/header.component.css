@@ -1,52 +1,50 @@
 .header-container {
-    border: 1px solid red;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  border: 1px solid red;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .logo {
-    margin-left: 25px;
-    display: flex;
+  margin-left: 25px;
+  display: flex;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .language {
-    cursor: pointer;
-    font-size: 16px;
-
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .user-content {
-    margin-right: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .user-content button {
-    border: 1px solid #000;
-    cursor: pointer;
-    width: 138px;
-    padding: 10px 0;
-    border: 1px solid #333;
-    border-radius: 6px;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: 138px;
+  padding: 10px 0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fff;
 }
 
 .user-content button:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }

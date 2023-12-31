@@ -1,8 +1,7 @@
 export interface BookMark {
-    id: number;
-  
+  id: number;
 }
 
 export enum Key {
-    FAVORITES = 'favorites'
+  FAVORITES = 'favorites',
 }

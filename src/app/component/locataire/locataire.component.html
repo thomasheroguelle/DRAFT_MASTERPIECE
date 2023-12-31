@@ -4,9 +4,7 @@
   <h1>Locataire in {{ "Localisation" }}</h1>
   <p>Appartements mis en ligne récemment : {{ locationNumber }}</p>
 
-  <button routerLink="/createnewappartement">
-    Créer une nouvelle annonce
-  </button>
+  <button routerLink="/createnewappartement">Créer une nouvelle annonce</button>
 
   <button routerLink="/map">
     <mat-icon>map</mat-icon>
@@ -15,8 +13,12 @@
 
   <div class="locataire-wrapper">
     <div class="wrapper--new-appartements">
-      <div routerLink="/locataire/{(locataire.id)}" *ngFor="let appartements of getAppartementsArray" class="new-items">
-        <img src="assets/imgs/randomImg.jpg" alt="">
+      <div
+        routerLink="/locataire/{(locataire.id)}"
+        *ngFor="let appartements of getAppartementsArray"
+        class="new-items"
+      >
+        <img src="assets/imgs/randomImg.jpg" alt="" />
         <!-- <mat-icon class="favorite-icon">favorite_border</mat-icon> -->
         <p class="price">{{ appartements.price }} €/mois</p>
         <p class="description">Description : {{ appartements.description }}</p>

@@ -6,7 +6,6 @@
   gap: 20px;
 }
 
-
 .new-items {
   width: 380px;
   border-radius: 2em;
@@ -17,7 +16,6 @@
   align-items: center;
   flex-direction: column;
 }
-
 
 .new-items:hover {
   cursor: pointer;
@@ -37,11 +35,10 @@ img {
 }
 
 .price {
-  color: #4643D3;
+  color: #4643d3;
   font-weight: bold;
 }
 
 .description {
   font-weight: 700;
-
 }

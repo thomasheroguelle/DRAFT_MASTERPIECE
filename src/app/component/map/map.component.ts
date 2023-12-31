@@ -4,14 +4,16 @@ import { GetUserLocalisationService } from '../../service/UserLocalisation/get-u
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
-
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css'],
 })
 export class MapComponent {
-  constructor(private getUserLocalisation: GetUserLocalisationService, private location: Location) { }
+  constructor(
+    private getUserLocalisation: GetUserLocalisationService,
+    private location: Location,
+  ) {}
 
   ngOnInit() {
     this.initMap();
