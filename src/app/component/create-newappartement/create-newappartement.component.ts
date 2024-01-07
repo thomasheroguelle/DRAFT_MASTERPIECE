@@ -49,6 +49,6 @@ export class CreateNewappartementComponent {
         console.error('erreur', error);
       },
     );
-    this.router.navigate(['locataire']);
+    this.router.navigate(['logements']);
   }
 }

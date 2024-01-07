@@ -9,7 +9,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { BedroomComponent } from './component/bedroom/bedroom.component';
 import { TenantlessapprtmComponent } from './component/tenantlessapprtm/tenantlessapprtm.component';
 import { RoommateComponent } from './component/roommate/roommate.component';
-import { LocataireComponent } from './component/locataire/locataire.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
@@ -26,6 +25,7 @@ import { FavoritebookmarkComponent } from './component/favoritebookmark/favorite
 import { RegisterComponent } from './component/register/register.component';
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
+import { LogementsComponent } from './component/logements/logements.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,6 @@ import { HeaderComponent } from './component/header/header.component';
     BedroomComponent,
     TenantlessapprtmComponent,
     RoommateComponent,
-    LocataireComponent,
     CreateNewappartementComponent,
     MapComponent,
     LogementDetailsComponent,
@@ -44,6 +43,7 @@ import { HeaderComponent } from './component/header/header.component';
     RegisterComponent,
     LoginComponent,
     HeaderComponent,
+    LogementsComponent,
   ],
   imports: [
     BrowserModule,

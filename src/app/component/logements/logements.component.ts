@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
-import { Observable, switchMap } from 'rxjs';
-import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
 import { HttpClient } from '@angular/common/http';
-import L from 'leaflet';
-import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
+import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
+import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-locataire',
-  templateUrl: './locataire.component.html',
-  styleUrl: './locataire.component.css',
+  selector: 'app-logements',
+  templateUrl: './logements.component.html',
+  styleUrl: './logements.component.css'
 })
-export class LocataireComponent {
+export class LogementsComponent {
   constructor(
     private router: Router,
     private masterPieceApi: MasterpieceapiService,
