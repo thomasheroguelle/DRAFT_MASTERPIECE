@@ -1,0 +1,14 @@
+.map-frame {
+  border: 2px solid black;
+}
+
+#map {
+  height: 80vh;
+  width: 80vw;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

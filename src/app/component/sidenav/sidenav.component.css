@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+mat-icon {
+  height: 4em;
+  width: 3em;
+  text-align: center;
+  line-height: 5em;
+  color: #72739f;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+mat-icon:hover {
+  background: #267fdd;
+}

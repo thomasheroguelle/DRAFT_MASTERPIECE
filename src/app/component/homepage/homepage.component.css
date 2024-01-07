@@ -1,0 +1,67 @@
+.container-wrapper h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.mainPage-wrapper h2 {
+  font-size: 28px;
+  margin-top: 25px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  max-width: 1200px;
+  width: 100%;
+  font-style: italic;
+}
+
+.randomHouseImg {
+  max-width: 450px;
+  width: 100%;
+}
+
+.mainPage-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.buy:hover,
+.rent:hover,
+.sell:hover {
+  border: 2px solid #000;
+}
+
+.buy,
+.rent,
+.sell,
+.locataire {
+  border-radius: 1em;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 234, 234);
+}
+
+.mainPage-wrapper i {
+  font-size: 32px;
+  color: grey;
+}

@@ -8,10 +8,9 @@ describe('RoommateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RoommateComponent]
-    })
-    .compileComponents();
-    
+      declarations: [RoommateComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(RoommateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
