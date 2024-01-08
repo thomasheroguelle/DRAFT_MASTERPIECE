@@ -15,7 +15,7 @@ import { BookMark } from '../../../Model/FavoriteBookMark/FavoriteBookMark';
 })
 export class CreateNewappartementComponent {
   id: number = 0;
-  title: string = '';
+  address: string = '';
   description: string = '';
   price: number = 0;
   marker = new L.Marker([48.866667, 2.333333]);
@@ -30,7 +30,7 @@ export class CreateNewappartementComponent {
   createNewAppartement(): void {
     const newAppartement: IAppartement = {
       id: 0,
-      title: this.title,
+      address: this.address,
       description: this.description,
       price: this.price,
       // location: {
