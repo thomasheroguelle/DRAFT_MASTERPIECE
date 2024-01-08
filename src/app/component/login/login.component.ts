@@ -5,6 +5,8 @@ import { Router, RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +18,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatInputModule,
     MatIconModule,
     FormsModule,
-    RouterModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    RouterModule
   ],
 })
 export class LoginComponent {
