@@ -9,11 +9,12 @@ import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
   styleUrl: './logement-details.component.css',
 })
 export class LogementDetailsComponent {
-
-  product?: IAppartement
-  id: number = this.activated.snapshot.params["id"];
-  constructor(private masterpieceApi: MasterpieceapiService, private activated: ActivatedRoute) {
-  }
+  product?: IAppartement;
+  id: number = this.activated.snapshot.params['id'];
+  constructor(
+    private masterpieceApi: MasterpieceapiService,
+    private activated: ActivatedRoute,
+  ) {}
 
   ngOnInit() {
     this.getAppartementById();
@@ -29,8 +30,5 @@ export class LogementDetailsComponent {
         console.error('erreur', error);
       },
     );
-  };
+  }
 }
-
-
-

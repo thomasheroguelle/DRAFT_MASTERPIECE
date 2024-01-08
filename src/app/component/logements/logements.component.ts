@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-logements',
   templateUrl: './logements.component.html',
-  styleUrl: './logements.component.css'
+  styleUrl: './logements.component.css',
 })
 export class LogementsComponent {
   constructor(

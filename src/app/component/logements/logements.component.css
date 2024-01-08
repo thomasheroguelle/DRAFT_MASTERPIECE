@@ -1,45 +1,44 @@
 .wrapper--new-appartements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-height: 100vh;
-    gap: 20px;
-  }
-  
-  .new-items {
-    width: 380px;
-    border-radius: 2em;
-    background-color: #fff;
-    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .new-items:hover {
-    cursor: pointer;
-    border: 1px solid #000;
-  }
-  
-  .locataire-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  img {
-    width: 90%;
-    object-fit: cover;
-    border-radius: 2em;
-    padding: 12px;
-  }
-  
-  .price {
-    color: #4643d3;
-    font-weight: bold;
-  }
-  
-  .description {
-    font-weight: 700;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 100vh;
+  gap: 20px;
+}
+
+.new-items {
+  width: 380px;
+  border-radius: 2em;
+  background-color: #fff;
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-items:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.locataire-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 2em;
+  padding: 12px;
+}
+
+.price {
+  color: #4643d3;
+  font-weight: bold;
+}
+
+.description {
+  font-weight: 700;
+}
