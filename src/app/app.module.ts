@@ -23,7 +23,7 @@ import { LogementDetailsComponent } from './component/logement-details/logement-
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
 import { RegisterComponent } from './component/register/register.component';
-import { LoginComponent } from './component/login/login.component';
+// import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LogementsComponent } from './component/logements/logements.component';
 
@@ -41,7 +41,6 @@ import { LogementsComponent } from './component/logements/logements.component';
     FavoritebookmarkComponent,
     HomepageComponent,
     RegisterComponent,
-    LoginComponent,
     HeaderComponent,
     LogementsComponent,
   ],
@@ -57,7 +56,6 @@ import { LogementsComponent } from './component/logements/logements.component';
     MatSidenavModule,
     MatDividerModule,
     MatToolbarModule,
-    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
