@@ -1,30 +1,29 @@
 <section>
-    <p>Appartements mis en ligne récemment : {{ locationNumber }}</p>
-  
-    <button routerLink="/createnewappartement">Créer une nouvelle annonce</button>
-  
-    <button routerLink="/map">
-      <mat-icon>map</mat-icon>
-      Map
-    </button>
-  
-    <div class="locataire-wrapper">
-      <div class="wrapper--new-appartements">
-        <div
+  <p>Appartements mis en ligne récemment : {{ locationNumber }}</p>
+
+  <button routerLink="/createnewappartement">Créer une nouvelle annonce</button>
+
+  <button routerLink="/map">
+    <mat-icon>map</mat-icon>
+    Map
+  </button>
+
+  <div class="locataire-wrapper">
+    <div class="wrapper--new-appartements">
+      <div
         *ngFor="let appartements of getAppartementsArray"
-        routerLink="/logement/{{appartements.id}}"
-          class="new-items"
-        >
-          <img src="assets/imgs/randomImg.jpg" alt="" />
-          <!-- <mat-icon class="favorite-icon">favorite_border</mat-icon> -->
-          <p class="price">{{ appartements.price }} €/mois</p>
-          <p class="description">Description : {{ appartements.description }}</p>
-          <p>Adresse : {{ appartements.address }}</p>
-          <p>id : {{ appartements.id }}</p>
-        </div>
+        routerLink="/logement/{{ appartements.id }}"
+        class="new-items"
+      >
+        <img src="assets/imgs/randomImg.jpg" alt="" />
+        <!-- <mat-icon class="favorite-icon">favorite_border</mat-icon> -->
+        <p class="price">{{ appartements.price }} €/mois</p>
+        <p class="description">Description : {{ appartements.description }}</p>
+        <p>Adresse : {{ appartements.address }}</p>
+        <p>id : {{ appartements.id }}</p>
       </div>
     </div>
-  
-    <p *ngIf="getAppartementsArray.length === 0">Pas d'appartement</p>
-  </section>
-  
+  </div>
+
+  <p *ngIf="getAppartementsArray.length === 0">Pas d'appartement</p>
+</section>

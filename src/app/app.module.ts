@@ -22,7 +22,7 @@ import { HomepageComponent } from './component/homepage/homepage.component';
 import { LogementDetailsComponent } from './component/logement-details/logement-details.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { FavoritebookmarkComponent } from './component/favoritebookmark/favoritebookmark.component';
-import { RegisterComponent } from './component/register/register.component';
+// import { RegisterComponent } from './component/register/register.component';
 // import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LogementsComponent } from './component/logements/logements.component';
@@ -40,7 +40,6 @@ import { LogementsComponent } from './component/logements/logements.component';
     SidenavComponent,
     FavoritebookmarkComponent,
     HomepageComponent,
-    RegisterComponent,
     HeaderComponent,
     LogementsComponent,
   ],
