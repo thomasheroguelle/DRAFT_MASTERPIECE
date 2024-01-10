@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
+import { AppartementService } from '../../service/AppartementCRUD/appartement.service';
 import { HttpClient } from '@angular/common/http';
 import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 import { Observable } from 'rxjs';
@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 export class LogementsComponent {
   constructor(
     private router: Router,
-    private masterPieceApi: MasterpieceapiService,
+    private masterPieceApi: AppartementService,
     private activatedRoute: ActivatedRoute,
     private httpClient: HttpClient,
   ) {}

@@ -26,6 +26,7 @@ import { FavoritebookmarkComponent } from './component/favoritebookmark/favorite
 // import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LogementsComponent } from './component/logements/logements.component';
+import { UploadfileComponent } from './component/uploadfile/uploadfile.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { LogementsComponent } from './component/logements/logements.component';
     HomepageComponent,
     HeaderComponent,
     LogementsComponent,
+    UploadfileComponent,
   ],
   imports: [
     BrowserModule,

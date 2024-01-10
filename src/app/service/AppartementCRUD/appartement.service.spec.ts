@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MasterpieceapiService } from './masterpieceapi.service';
+import { AppartementService } from './appartement.service';
 
 describe('MasterpieceapiService', () => {
-  let service: MasterpieceapiService;
+  let service: AppartementService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MasterpieceapiService);
+    service = TestBed.inject(AppartementService);
   });
 
   it('should be created', () => {

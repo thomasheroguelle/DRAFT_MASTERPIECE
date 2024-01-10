@@ -1,0 +1,16 @@
+<div>
+    <h2>Upload File</h2>
+    <form (ngSubmit)="createNewFile()" enctype="multipart/form-data">
+        <input type="file" class="file-upload" (change)="onChange($event)" #fileUpload />
+    </form>
+</div>
+
+<ul *ngIf="file">
+    <li>Id : {{file.id}}</li>
+    <li>Name : {{file.name}}</li>
+    <li>Type : {{file.type}}</li>
+</ul>
+
+<img *ngIf="file" [src]="'http://localhost:8091/api/v1/image/' + file.name" alt="Uploaded Image" />
+
+<button (click)="getNewFile()">Get File</button>

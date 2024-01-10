@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
+import { AppartementService } from '../../service/AppartementCRUD/appartement.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 
@@ -12,7 +12,7 @@ export class LogementDetailsComponent {
   product?: IAppartement;
   id: number = this.activated.snapshot.params['id'];
   constructor(
-    private masterpieceApi: MasterpieceapiService,
+    private masterpieceApi: AppartementService,
     private activated: ActivatedRoute,
   ) {}
 
