@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
-import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
+import { AppartementService } from '../../service/AppartementCRUD/appartement.service';
 import { Router } from '@angular/router';
 import { GetUserLocalisationService } from '../../service/UserLocalisation/get-user-localisation.service';
 import { HttpClient } from '@angular/common/http';
@@ -22,7 +22,7 @@ export class CreateNewappartementComponent {
   favorites!: BookMark;
 
   constructor(
-    private masterPieceApi: MasterpieceapiService,
+    private masterPieceApi: AppartementService,
     private router: Router,
     private getUserLocalisation: GetUserLocalisationService,
   ) {}
