@@ -46,10 +46,11 @@ export class UploadfileComponent {
           if (error instanceof HttpErrorResponse) {
             console.log('Réponse d\'erreur:', error.error);
           }
-        }
-      });
-    }
+          // Faire quelque chose avec le fichier reçu, par exemple ouvrir dans une nouvelle fenêtre.
+        },
+      }
+      )
+    };
   }
-
-
 }
+

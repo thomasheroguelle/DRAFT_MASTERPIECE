@@ -18,6 +18,5 @@ export class UploadfileService {
 
   getFile(fileName: string): Observable<Blob> {
     return this.httpClient.get(`${this.url}/${fileName}`, { responseType: 'blob' });
-
   }
 }
