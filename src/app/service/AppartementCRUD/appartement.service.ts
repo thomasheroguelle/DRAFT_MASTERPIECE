@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class MasterpieceapiService {
+export class AppartementService {
   errorMessage?: string;
   private url = 'http://localhost:8091/api/v1/appt';
 

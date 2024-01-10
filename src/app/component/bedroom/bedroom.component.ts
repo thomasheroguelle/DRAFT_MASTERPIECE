@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MasterpieceapiService } from '../../service/SpringCRUD/masterpieceapi.service';
+import { AppartementService } from '../../service/AppartementCRUD/appartement.service';
 import { Observable } from 'rxjs';
 import { IAppartement } from '../../../Model/AppartementModel/AppartementModel';
 

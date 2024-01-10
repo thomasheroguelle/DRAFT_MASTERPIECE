@@ -1,0 +1,15 @@
+<div>
+    <h2>Upload File</h2>
+    <form (ngSubmit)="createNewFile()" enctype="multipart/form-data">
+        <input type="file" class="file-upload" (change)="onChange($event)" #fileUpload />
+    </form>
+</div>
+
+<ul *ngIf="file">
+    <li>Id : {{file.id}}</li>
+    <li>Name : {{file.name}}</li>
+    <li>Type : {{file.type}}</li>
+</ul>
+
+<button (click)="createNewFile()">Upload File</button>
+<button (click)="getNewFile()">View File</button>
