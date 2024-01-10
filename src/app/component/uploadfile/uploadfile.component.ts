@@ -35,22 +35,6 @@ export class UploadfileComponent {
       });
     }
   }
-  getNewFile() {
-    if (this.file) {
-      this.uploadFileService.getFile(this.file.name).subscribe({
-        next: (response) => {
-          console.log(response);
-        },
-        error: (error) => {
-          console.error('Erreur getNewFile', error);
-          if (error instanceof HttpErrorResponse) {
-            console.log('Réponse d\'erreur:', error.error);
-          }
-          // Faire quelque chose avec le fichier reçu, par exemple ouvrir dans une nouvelle fenêtre.
-        },
-      }
-      )
-    };
-  }
+
 }
 
