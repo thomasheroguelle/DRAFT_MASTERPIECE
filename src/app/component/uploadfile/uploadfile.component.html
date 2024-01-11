@@ -11,5 +11,6 @@
     <li>Type : {{file.type}}</li>
 </ul>
 
-<img *ngIf="file" [src]="'http://localhost:8091/api/v1/image/' + file.name" alt="Uploaded Image" />
-
+@if (file) {<img [src]="'http://localhost:8091/api/v1/image/' + file.name" alt="Uploaded Image" />
+}
+@else {<p>Merci de séléctionner une image</p>}
