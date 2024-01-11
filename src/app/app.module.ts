@@ -11,7 +11,7 @@ import { TenantlessapprtmComponent } from './component/tenantlessapprtm/tenantle
 import { RoommateComponent } from './component/roommate/roommate.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
-import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
+// import { CreateNewappartementComponent } from './component/create-newappartement/create-newappartement.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MapComponent } from './component/map/map.component';
 import { LeafletEvent } from 'leaflet';
@@ -26,7 +26,7 @@ import { FavoritebookmarkComponent } from './component/favoritebookmark/favorite
 // import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LogementsComponent } from './component/logements/logements.component';
-import { UploadfileComponent } from './component/uploadfile/uploadfile.component';
+// import { UploadfileComponent } from './component/uploadfile/uploadfile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { UploadfileComponent } from './component/uploadfile/uploadfile.component
     BedroomComponent,
     TenantlessapprtmComponent,
     RoommateComponent,
-    CreateNewappartementComponent,
+    // CreateNewappartementComponent,
     MapComponent,
     LogementDetailsComponent,
     SidenavComponent,
@@ -43,7 +43,7 @@ import { UploadfileComponent } from './component/uploadfile/uploadfile.component
     HomepageComponent,
     HeaderComponent,
     LogementsComponent,
-    UploadfileComponent,
+    // UploadfileComponent,
   ],
   imports: [
     BrowserModule,
