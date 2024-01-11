@@ -17,3 +17,10 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,17 +1,63 @@
-<!-- create-newappartement.component.html -->
-
 <h1>Créer une nouvelle annonce :</h1>
 <p>Appartement :</p>
 
-<p>Titre de l'annonce :</p>
-<input type="text" [(ngModel)]="address" />
+<div class="container">
+  <div class="card">
+    <form>
+      <p>Titre de l'annonce :</p>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>Ex: Studio 16ème</mat-label>
+          <input
+            matInput
+            required
+            class="form-control"
+            id="email"
+            [(ngModel)]="description"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </mat-form-field>
+      </div>
 
-<p>Description de l'annonce :</p>
-<input type="text" [(ngModel)]="description" />
+      <p>Adresse de l'annonce :</p>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>Localisation</mat-label>
+          <input
+            matInput
+            required
+            class="form-control"
+            id="email"
+            [(ngModel)]="address"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </mat-form-field>
+      </div>
 
-<p>Prix de l'annonce :</p>
-<input type="number" [(ngModel)]="price" />
+      <p>Prix de l'annonce :</p>
+      <div class="form-group">
+        <mat-form-field>
+          <input
+            matInput
+            required
+            class="form-control"
+            id="email"
+            [(ngModel)]="price"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </mat-form-field>
+      </div>
+    </form>
 
-<button (click)="createNewAppartement()">Valider l'annonce</button>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      mat-raised-button
+      (click)="createNewAppartement()"
+    >
+      Valider l'annonce
+    </button>
 
-<app-uploadfile></app-uploadfile>
+    <app-uploadfile></app-uploadfile>
+  </div>
+</div>

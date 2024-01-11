@@ -2,16 +2,19 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { UploadfileService } from '../../service/UploadFileService/uploadfile.service';
 import { File } from '../../../Model/File';
 import { HttpErrorResponse } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-uploadfile',
   templateUrl: './uploadfile.component.html',
-  styleUrl: './uploadfile.component.css'
+  styleUrl: './uploadfile.component.css',
+  standalone: true,
+  imports: [CommonModule],
 })
 export class UploadfileComponent {
   file: File | undefined;
 
-  constructor(private uploadFileService: UploadfileService) { }
+  constructor(private uploadFileService: UploadfileService) {}
 
   onChange(event: any) {
     this.file = event.target.files[0];
@@ -29,12 +32,10 @@ export class UploadfileComponent {
         error: (error) => {
           console.error('Erreur createNewFile', error);
           if (error instanceof HttpErrorResponse) {
-            console.log('Réponse d\'erreur:', error.error);
+            console.log("Réponse d'erreur:", error.error);
           }
-        }
+        },
       });
     }
   }
-
 }
-

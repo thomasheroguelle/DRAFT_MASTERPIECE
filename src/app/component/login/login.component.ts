@@ -21,7 +21,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
   ],
 })
 export class LoginComponent {
