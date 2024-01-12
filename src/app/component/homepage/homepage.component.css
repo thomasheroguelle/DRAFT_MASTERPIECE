@@ -1,15 +1,16 @@
-.container-wrapper h1 {
+.text-content h1 {
   font-weight: 500;
-  text-transform: uppercase;
-  font-size: 24px;
+  font-size: 37px;
+  line-height: 1.2em;
 }
 
-.mainPage-wrapper h2 {
-  font-size: 28px;
-  margin-top: 25px;
+.text-content p {
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
-.container-btn {
+/*
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,9 +22,8 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  border: 2px solid black;
+  background-color: rgb(44, 170, 254);
   text-transform: uppercase;
-  max-width: 1200px;
   width: 100%;
   font-style: italic;
 }
@@ -31,37 +31,39 @@
 .randomHouseImg {
   max-width: 450px;
   width: 100%;
+} */
+
+.main-container {
+  border: 2px solid green;
+  margin-left: 150px;
 }
 
-.mainPage-wrapper {
+.container-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f5f8ff;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.inputs-container {
+  width: 90%;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.buy:hover,
-.rent:hover,
-.sell:hover {
-  border: 2px solid #000;
-}
-
-.buy,
-.rent,
-.sell,
-.locataire {
-  border-radius: 1em;
-  width: 400px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(235, 234, 234);
-}
-
-.mainPage-wrapper i {
-  font-size: 32px;
-  color: grey;
+mat-form-field {
+  width: 320px;
 }

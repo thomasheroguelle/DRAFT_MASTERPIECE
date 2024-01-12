@@ -1,23 +1,48 @@
-<div class="container-btn">
+<div class="main-container">
   <div class="container-wrapper">
-    <img class="randomHouseImg" src="assets\imgs\homepage\home2.jpg" alt="" />
-    <h1>Des logements qui racontent des histoires, trouvez la votre.</h1>
+    <div class="column text-content">
+      <h1>Des logements qui racontent des histoires trouvez la votre.</h1>
+      <p>Découvrez, vendez, achetez</p>
+      <div class="flex">
+        <p>
+          <b>+1200</b> <br />
+          Produits premium
+        </p>
+        <p>
+          <b>+15</b> <br />
+          Années d'expérience
+        </p>
+        <p>
+          <b>+146</b> <br />
+          Award winning
+        </p>
+      </div>
+    </div>
+    <img class="randomHouseImg" src="assets\imgs\homepage\home.jpg" alt="" />
   </div>
 
-  <h1>Our Main Focus :</h1>
-  <div class="mainPage-wrapper">
-    <div class="buy">
-      <i class="fa-solid fa-bed"></i>
-      <h2>Acheter une maison</h2>
-    </div>
-    <div class="rent">
-      <i class="fa-solid fa-house"></i>
-      <h2>Louer une maison</h2>
-    </div>
-    <div class="sell">
-      <i class="fa-solid fa-person"></i>
-      <h2>Vendre un bien</h2>
-    </div>
+  <div class="inputs-container">
+    <form>
+      <div class="column">
+        <p>Localisation</p>
+        <mat-form-field class="input-width">
+          <input matInput required class="form-control" id="to complete" />
+        </mat-form-field>
+      </div>
+      <div class="column">
+        <p>Type</p>
+        <mat-form-field class="input-width">
+          <input matInput required class="form-control" id="to complete" />
+        </mat-form-field>
+      </div>
+      <div class="column">
+        <p>Budget</p>
+        <mat-form-field class="input-width">
+          <input matInput required class="form-control" id="to complete" />
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary">Search now</button>
+
+    </form>
   </div>
 </div>
-<!-- Faire pour les colocataires ultérieurement -->

@@ -40,7 +40,7 @@ import { LogementsComponent } from './component/logements/logements.component';
     LogementDetailsComponent,
     SidenavComponent,
     FavoritebookmarkComponent,
-    HomepageComponent,
+    // HomepageComponent,
     HeaderComponent,
     LogementsComponent,
     // UploadfileComponent,
